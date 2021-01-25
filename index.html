@@ -14,7 +14,34 @@
 
 <body>
 
-  
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Latitude</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	  <div class="box turquoise">
+		<ul class="navbar-nav mr-auto">
+		  <li class="nav-item active">
+			<a class="nav-link" href="#">Latitude <span class="sr-only">(current)</span></a>
+		  </li>
+		  <li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" href="#" id="navbarPlots" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			  Plots
+			</a>
+			<div class="dropdown-menu" aria-labelledby="navbarPlots">
+			  <a class="dropdown-item" href="#">Maximum Temperature</a>
+			  <a class="dropdown-item" href="#">Humidity</a>
+			  <a class="dropdown-item" href="#">Cloudiness</a>
+			  <a class="dropdown-item" href="#">Wind Speed</a>
+			</div>
+		  </li>
+
+		</ul>
+	</div>
+  </div>
+</nav>
   <!-- Creates the Overall Grid -->
   <div class="container">
 
@@ -23,11 +50,9 @@
 
       <!-- First (and only column) -->
       <div class="col-md-3">
-        <div class="box turquoise">
-          <h3>Latitude</h3>
-        </div>
-        
       </div>
+        
+
     </div>
 
     
