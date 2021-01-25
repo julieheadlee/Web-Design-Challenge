@@ -27,4 +27,21 @@
 	background: lightseagreen;
 	color: white
 	font-family: "Times New Roman", Times, serif;
+	
+}
+
+.left {
+	float: left;
+	padding: 0 10px 0 0;
+	width: 200px;
+	height: 200px;
+	object-fit: scale-down
+}
+
+.mini {
+	float: center;
+	padding: 0 10px 0 0;
+	width: 200px;
+	height: 200px;
+	object-fit: scale-down
 }

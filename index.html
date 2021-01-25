@@ -5,11 +5,11 @@
 
   <meta charset="UTF-8">
   <title>Weather Visualization</title>
-
+  <link rel="stylesheet" href="style.css">
   <!-- Bring in our bootstrap stylesheet -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="style.css">
+ 
 </head>
 
 <body>
@@ -45,19 +45,46 @@
       </div>
     </nav>
   <!-- Creates the Overall Grid -->
-  <div class="container">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-8">
+		    <h4>Summary: Latitude vs. X</h4>
+		    <hr>
+        <img src="Resources/latitude_temperature.png" alt="Maximum Temperature by Latitude" class="left" />
+        <p>
+        The purpose of this analysis was to examine how latitude affects various weather measurements: maximum temperature, humidity, cloudiness, and wind speed.  Specifically we asked how weather changes as you get closer to the equator.  By analyzing data from the OpenWeatherMap API based on over 500 cities, using Matplotlib, we could determine trends and correlations between latitude and weather.
+        </p>
+        </div>
+      <div class="col-4">
+        <h4>Visualizations</h4>
+        <hr>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-2">
+              <a target="_self" href="max_temp.html">
+              <img src="Resources/latitude_temperature.png" alt="Maximum Temperature by Latitude" class="mini" />
+              </a>
 
-  </div>
-  <div class="row">
-    <div class="col-8">col-8</div>
-    <div class="col-4">col-4</div>
-  </div>
-</div>
-
+              <a target="_self" href="humidity.html">
+              <img src="Resources/latitude_humidity.png" alt="Humidity by Latitude" class="mini"/>
+              </a>
+            </div>  
+          </div> 
+          <div class="row">
+            <div class="col-2">
+              <a target="_self" href="cloudiness.html">
+              <img src="Resources/latitude_cloudiness.png" alt="Cloudiness by Latitude" class="mini"/>
+              </a>
+              <a target = "_self" href="wind.html">
+              <img src="Resources/latitude_windspeed.png" alt="Wind Speed by Latitude" class="mini"/>
+              </a>
+            </div>
+          </div>     
+        </div>
+      </div>
     </div>
-
-    
   </div>
+
 
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
