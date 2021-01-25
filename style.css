@@ -2,6 +2,12 @@
 	font-family: "Times New Roman", Times, serif;
 }
 
+.h1 {
+	color: lightseagreen;
+	font-size: 36px
+	font-family: "Times New Roman", Times, serif;
+	font-weight: bold;
+}
 .box {
   font-family: "Times New Roman", Times, serif;
   font-weight: bold
@@ -17,3 +23,8 @@
   h1: white;
 }
 
+.latitude {
+	background: lightseagreen;
+	color: white
+	font-family: "Times New Roman", Times, serif;
+}
