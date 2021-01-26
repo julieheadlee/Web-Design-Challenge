@@ -13,63 +13,95 @@
 </head>
 
 <body>
-
-<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><span class="latitude">Latitude</span></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class=" navbar-expand-lg navbar-light bg-light nav-color navbar nav">
+      <a class="navbar-brand" href="index.html"> Latitude</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-          <div class="navbar-nav">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Plots
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="max_temperature.html">Max Temperature</a>
-                <a class="dropdown-item" href="humidity.html">Humidity</a>
-                <a class="dropdown-item" href="cloudiness.htm">Cloudiness</a>
-                <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
+      </button>
+  
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <div class="nav navbar-nav navbar-right">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                          data-bs-toggle="dropdown" aria-expanded="false">
+                          Plots
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="maxtemp.html">Max Temperature</a></li>
+                          <li><a class="dropdown-item" href="humidity.html">Humidity</a></li>
+                          <li><a class="dropdown-item" href="cloudiness.html">Cloudiness</a></li>
+                          <li><a class="dropdown-item" href="wind.html">Wind Speed</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item active">
+                      <a class="nav-link" href="comparisons.html">Comparison </a>
+                  </li>
+                  <li class="nav-item active">
+                      <a class="nav-link" href="data.html">Data </a>
+                  </li>
               </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="data.html">Data</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="comparison.html">Comparison</a>
-            </li>
-            
+          </div>
+      </div>
+  </nav>
+    
+    <!-- Creates the Overall Grid -->
+    <div class="container-fluid">
+      <div class="row">
+        <br>
+      </div>
+      <div class="row">
+        <div class="col-1">
+          
+        </div>
+        <div class="col-6">
+          <h4>Wind Speed</h4>
+          <hr>
+          <img src="Resources/latitude_windspeed.png" alt="Wind Speed by Latitude" class="left" />
+          <p>
+            This scatter plot suggests there is a strong relationship between latitude and temperature, with locations closest to the equator (Latitude = 0) being highest. The other interesting observation from this is the lack of cities at southern latitudes -- those less than latitude < -55, as compared to the northern latitudes. Knowing that land mass is more sparse at far southern latitudes, this makes sense.
+          </p>
+          </div>
+        <div class="col-3 ">
+          <h4>Visualizations</h4>
+          <hr>
+          <div class="container-fluid">
+            <div class="row">
+              
+                <a target="_self" href="maxtemp.html">
+                <img src="Resources/latitude_temperature.png" alt="Maximum Temperature by Latitude" class="mini" />
+                </a>
+  
+                <a target="_self" href="humidity.html">
+                <img src="Resources/latitude_humidity.png" alt="Humidity by Latitude" class="mini"/>
+                </a>
+              
+            </div> 
+            <div class="row">
+              
+                <a target="_self" href="cloudiness.html">
+                <img src="Resources/latitude_cloudiness.png" alt="Cloudiness by Latitude" class="mini"/>
+                </a>
+                <a target = "_self" href="wind.html">
+                <img src="Resources/latitude_windspeed.png" alt="Wind Speed by Latitude" class="mini"/>
+                </a>
+              
+            </div>     
           </div>
         </div>
+        <div class="col-1">
+  
+        </div>
       </div>
-    </nav>
-  <!-- Creates the Overall Grid -->
-  <div class="container">
-
-<div class="container">
-  <div class="row">
-    <div class="col">col</div>
-    <div class="col">col</div>
-    <div class="col">col</div>
-    <div class="col">col</div>
-  </div>
-  <div class="row">
-    <div class="col-8">col-8</div>
-    <div class="col-4">col-4</div>
-  </div>
-</div>
-        
-
-    </div>
-
     
-  </div>
+    </div>
+  
+  </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script></body>
 
-
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</body>
 
 </html>

@@ -2,15 +2,15 @@
 	font-family: "Times New Roman", Times, serif;
 }
 
-.h1 {
+.h4 {
 	color: lightseagreen;
-	font-size: 36px
+	font-size: 24px;
 	font-family: "Times New Roman", Times, serif;
 	font-weight: bold;
 }
 .box {
   font-family: "Times New Roman", Times, serif;
-  font-weight: bold
+  font-weight: bold;
   min-height: 50px;
   padding: 5px;
   margin: 5px;
@@ -18,23 +18,20 @@
   color: #fff;
 }
 
-.turquoise {
-  background: lightseagreen;
-  h1: white;
-}
-
-.latitude {
+.navbar-brand {
 	background: lightseagreen;
-	color: white
+	color: white;
 	font-family: "Times New Roman", Times, serif;
-	
+	margin: 5px;
+	font-weight: bold;
+	padding: 5px;
 }
 
 .left {
 	float: left;
 	padding: 0 10px 0 0;
-	width: 200px;
-	height: 200px;
+	width: 400px;
+	height: 250px;
 	object-fit: scale-down
 }
 
@@ -43,5 +40,6 @@
 	padding: 0 10px 0 0;
 	width: 200px;
 	height: 200px;
-	object-fit: scale-down
+	object-fit: scale-down;
 }
+
